@@ -1,0 +1,13 @@
+{
+  "name": "Test chrom extension",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "A test for chrome extensions",
+  "background": {
+    "service_worker": "service_worker.js",
+    "type": "module"
+  },
+  "action": {"default_popup": "index.html"},
+  "permissions": ["scripting"],
+  "host_permissions": ["https://*/*", "http://*/*"]
+}
